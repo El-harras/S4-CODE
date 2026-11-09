@@ -1,6 +1,3 @@
-<?php
-$articles = $articles ?? [];
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
