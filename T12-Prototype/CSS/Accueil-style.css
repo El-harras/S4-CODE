@@ -1,0 +1,171 @@
+body {
+    padding: 10px 40px 0px 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*header*/
+
+header{
+    padding-bottom: 4%;
+}
+
+.logo-page {
+    display: flex;
+    align-items: center;
+}
+
+.logo-page img {
+    width: 44px;
+    height: 44px;
+}
+
+/*Une vie plus sereine*/
+
+.resume {
+    max-width: 50%;
+}
+
+.domaine {
+    padding: 8px 4px 8px 4px;
+    text-align: center;
+    color: #00A99D;
+    background-color: #a6e5e0;
+    border-radius: 50px;
+    width: 40%;
+    font-size: 20px;
+}
+
+.nom {
+    color: #00A99D;
+}
+
+.apercu {
+    font-size: 15px;
+    color: silver;
+}
+
+.button {
+    border-radius: 80px;
+    color: white;
+    background-color: #00a99d;
+    padding: 8px 4px 8px 4px;
+}
+
+/*A propos*/
+.definition {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.a_propos h1 {
+    color: #00A99D;
+}
+
+/*Compétences & apprentissages*/
+
+.competence {
+    background-color: #dafbf8;
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgs {
+    width: 44px;
+    height: 44px;
+}
+
+.qualites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.carte {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 16%;
+}
+
+main {
+    padding-top: 20px;
+}
+
+/*Projet à la une*/
+
+.Projet {
+    border: 1px solid;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.resume_projet {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%; 
+}
+
+.projet {
+    display: flex;
+    gap: 30px;
+    max-width: 45%;
+}
+
+.projet img {
+    width: 50%;
+    height: 100%;
+}
+
+.nom-projet {
+    color: #00A99D;
+}
+
+.type_projet {
+    display: flex;
+    gap: 20px;
+}
+
+.type_projet p {
+    background-color: #5bbab2;
+    color: white;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+#spark{
+    color: orange;
+}
+
+/*footer*/
+
+footer {
+    padding-top: 20px;
+}
+
+.resume_contact {
+    display: flex;
+    gap: 200px;
+}
+
+.Contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Me_contact {
+    display: flex;
+    gap: 30px;
+}

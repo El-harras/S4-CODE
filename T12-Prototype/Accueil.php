@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="CSS/Accueil-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-page">
+            <img src="images/LOGO.png" alt="logo">
+            <p><strong>Mon Portfolio</strong></p>
+        </div>
+    </header>
+
+    <section>
+        <div class="resume">
+            <p class="domaine">Developpeur web junior</p>
+            <h1>
+                <strong>Bonjour moi c'est</strong>
+                <br><span class="nom"><strong>MOHAMED EL HARRAS</strong>
+            </h1>
+            <p>Je conçois des expériences web simples utiles et élégantes.</p>
+            <p class="apercu">
+                Passionné par le développement web, j'apprends chaque jour de nouvelles
+                technologies et j'aime créer des projets concrets qui apportent une vraie valeur.
+            </p>
+            <a class="button">Découvrir mon projet</a>
+        </div>
+
+        <div class="definition">
+            <div class="mon-imag">
+                <img src="images/mon-image.png" alt="Mon Imag">
+            </div>
+            <div class="a_propos">
+                <h1>A propos</h1>
+                <P>Je suis Mohamed, un passionné de développement web.
+                    Actuellement en formation chez Solicode, je me spécialise dans
+                    la création d'applications web modernes et fonctionnelles.
+                    J'aime apprendre, relever de nouveaux défis et transformer
+                    des idées en projets concrets.
+                </P>
+                <a class="button">En formation chez Solicode</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+
+        <div class="competence">
+            <div class="title">
+                <img src="images/image2.png" alt="image </>" class="imgs">
+                <h3>Compétences & apprentissages</h3>
+            </div>
+            <div class="qualites">
+                <div class="carte">
+                    <img src="images/html_image.png" alt="html_image">
+                    <h3>HTML</h3>
+                    <P>Structure des pages web</P>
+                </div>
+                <div class="carte">
+                    <img src="images/css_image.png" alt="css_image">
+                    <h3>CSS</h3>
+                    <P>Mise en forme et design</P>
+                </div>
+                <div class="carte">
+                    <img src="images/javascript_image.png" alt="javascript_image">
+                    <h3>JavaScript</h3>
+                    <P>Interactivité et logique</P>
+                </div>
+                <div class="carte">
+                    <img src="images/php_image.png" alt="php_image">
+                    <h3>PHP</h3>
+                    <P>Développement back-end</P>
+                </div>
+                <div class="carte">
+                    <img src="images/mysql_image.png" alt="mysql_image">
+                    <h3>MySQL</h3>
+                    <P>Gestion des bases de données</P>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet -->
+        <div class="Projet">
+            <div class="title">
+                <img src="images/image_stare.png" alt="Stare" class="imgs">
+                <h3>Projet à la une</h3>
+            </div>
+            <div class="resume_projet">
+                <?php foreach ($projets as $projet): ?>
+                    <div class="projet">
+                        <img src="images/<?= htmlspecialchars($projet['image']) ?>" alt="image de projet">
+                        <div class="petit_definition">
+                            <h2><?= htmlspecialchars($projet['titre']) ?></h2>
+                            <p class="defene"><?= htmlspecialchars(mb_substr($projet['defene'], 0, 200)) ?></p>
+                            <div class="type_projet">
+                                <p><?= htmlspecialchars($projet['objectif']) ?></p>
+                                <p><?= htmlspecialchars($projet['type']) ?></p>
+                            </div>
+                            <a class="button" href="#">Voir les détails du projet</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="resume_contact">
+            <div class="Contact">
+                <img src="images/image_email.png" alt="image email" class="imgs">
+                <div>
+                    <h3>Restons en contact</h3>
+                    <P>Une question, une opportunité ou simplement envie d'échanger ?
+                        N'hésitez pas à me contacter !
+                    </P>
+                </div>
+            </div>
+            <div class="Me_contact">
+                <div class="contact_email">
+                    <img src="images/contact-email.png" alt="image contact email">
+                    <P><a href="x1man10m@gmail.com">Email</a></P>
+                </div>
+                <div class="contact_GitHub">
+                    <img src="images/contact-github.png" alt="image contact github">
+                    <p><a href="https://github.com/El-harras/S2-Code.git">GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
