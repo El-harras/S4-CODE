@@ -1,4 +1,3 @@
-<?php /** @var array $variable */ ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
