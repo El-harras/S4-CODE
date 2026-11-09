@@ -2,7 +2,7 @@
 $projets = [
     [
         'titre' => 'LifeFlow',
-        'defene' => 'Une application web pour organiser les tâches les rendez-vous et les activités du quotidien',
+        'defene' => 'Une application web pour organiser les Taches les rendez-vous et les activités du quotidien',
         'image' => 'image_projet.png',
         'objectif' => 'Organisation',
         'type' => 'Web app'
@@ -10,7 +10,7 @@ $projets = [
     
     [
         'titre' => 'SPARK',
-        'defene' => 'Application web pour organiser les tâches et suivre les sessions de concentration,afin de mieux gérer les tâches importantes.',
+        'defene' => 'Application web pour organiser les Taches et suivre les sessions de concentration,afin de mieux gérer les Taches importantes.',
         'image' => 'spark.png',
         'objectif' => 'Organisation',
         'type' => 'Web app'
