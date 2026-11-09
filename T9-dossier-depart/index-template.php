@@ -1,7 +1,3 @@
-<?php
-$articles = $articles ?? [];
-$categories = $categories ?? [];
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
