@@ -17,4 +17,37 @@ $projets = [
     ]
 ];
 
+$competences = [
+    [
+        'img' => 'html_image.png',
+        'alt' => 'html_image',
+        'longe' => 'HTML',
+        'role' => 'Structure des pages web'
+    ],
+    [
+        'img' => 'css_image.png',
+        'alt' => 'css_image',
+        'longe' => 'CSS',
+        'role' => 'Mise en forme et design'
+    ],
+    [
+        'img' => 'javascript_image.png',
+        'alt' => 'javascript_image',
+        'longe' => 'JavaScript',
+        'role' => 'Interactivité et logique'
+    ],
+    [
+        'img' => 'php_image.png',
+        'alt' => 'php_image',
+        'longe' => 'PHP',
+        'role' => 'Développement back-end'
+    ],
+    [
+        'img' => 'mysql_image.png',
+        'alt' => 'mysql_image',
+        'longe' => 'MySQL',
+        'role' => 'Gestion des bases de données'
+    ]
+];
+
 require 'Accueil.php';

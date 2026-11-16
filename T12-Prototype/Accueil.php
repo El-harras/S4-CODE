@@ -56,31 +56,14 @@
                 <h3>Compétences & apprentissages</h3>
             </div>
             <div class="qualites">
-                <div class="carte">
-                    <img src="images/html_image.png" alt="html_image">
-                    <h3>HTML</h3>
-                    <P>Structure des pages web</P>
-                </div>
-                <div class="carte">
-                    <img src="images/css_image.png" alt="css_image">
-                    <h3>CSS</h3>
-                    <P>Mise en forme et design</P>
-                </div>
-                <div class="carte">
-                    <img src="images/javascript_image.png" alt="javascript_image">
-                    <h3>JavaScript</h3>
-                    <P>Interactivité et logique</P>
-                </div>
-                <div class="carte">
-                    <img src="images/php_image.png" alt="php_image">
-                    <h3>PHP</h3>
-                    <P>Développement back-end</P>
-                </div>
-                <div class="carte">
-                    <img src="images/mysql_image.png" alt="mysql_image">
-                    <h3>MySQL</h3>
-                    <P>Gestion des bases de données</P>
-                </div>
+                <?php foreach ($competences as $competence): ?>
+                    <div class="carte">
+                        <img src="images/<?= htmlspecialchars($competence['img']) ?>"
+                            alt=<?= htmlspecialchars($competence['alt']) ?>>
+                        <h3><?= htmlspecialchars($competence['longe']) ?></h3>
+                        <P><?= htmlspecialchars($competence['role']) ?></P>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
